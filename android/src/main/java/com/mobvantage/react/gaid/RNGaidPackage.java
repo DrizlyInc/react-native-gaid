@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class RNGaidPackage implements ReactPackage {
-  
+
     public RNGaidPackage(){
     }
 
@@ -21,11 +21,6 @@ public class RNGaidPackage implements ReactPackage {
 
         modules.add(new RNGaidModule(reactContext));
         return modules;
-    }
-
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
     }
 
     @Override
